@@ -10,7 +10,7 @@ const userUpdate =()=>{
 
   return (
     <div>
-      {id}) {name}
+      {id} -- {name}
       <button onClick={() => userUpdate()}>get details</button>
       <br />
     </div>
