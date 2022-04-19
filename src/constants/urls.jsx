@@ -1,4 +1,4 @@
-const baseURL = process.env.REACT_APP_API
+const UrlaMain = process.env.REACT_APP_API
 
 
 const urls = {
@@ -7,6 +7,6 @@ const urls = {
 
 }
 
-export default baseURL
+export default UrlaMain
 
 export {urls}

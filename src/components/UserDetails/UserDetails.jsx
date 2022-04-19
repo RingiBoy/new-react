@@ -1,9 +1,13 @@
 import React from 'react';
 
-const UserDetails = () => {
+const UserDetails = ({userDetails, getUserId}) => {
+    
+    const {id, username, email} = userDetails
     return (
         <div>
-           UserDetails 
+           {id}, {username}, {email}
+           <button onClick={()=> getUserId(id)}>get posts on this user</button> 
+           
         </div>
     );
 };
