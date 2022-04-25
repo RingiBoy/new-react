@@ -1,4 +1,4 @@
-const baseUrla = process.env.REACT_APP_API
+const baseUrla = process.env.REACT_APP_API;
 
 
 const urls = {

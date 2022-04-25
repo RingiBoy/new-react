@@ -8,6 +8,7 @@ const Car = ({car}) => {
             <div>id: {id}</div>
             <div>year: {year}</div>
             <div>price: {price}</div>
+            <hr />
         </div>
     );
 };
