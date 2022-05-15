@@ -1,8 +1,11 @@
 import React from "react";
+import {useSelector}from 'react-redux'
 
 import TodoItem from "./TodoItem";
 
-const TodoList = ({ todos, removeTodo, toggleTodoComplete }) => {
+const TodoList = () => {
+  
+  const todos=useSelector(state=>state.storeFromTodoSlice.todosArray);
   return (
     
       <ul>
@@ -10,8 +13,7 @@ const TodoList = ({ todos, removeTodo, toggleTodoComplete }) => {
             
           <TodoItem
             key={todo.id}
-            removeTodo={removeTodo}
-            toggleTodoComplete={toggleTodoComplete}
+          
             {...todo}
           />
            
